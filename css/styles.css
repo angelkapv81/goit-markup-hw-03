@@ -5,8 +5,16 @@ body {
   font-family: Roboto, sans-serif;
   border: 0;
 }
-
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 .link,
@@ -61,7 +69,6 @@ ul {
 .contact {
   color: var(--text-color);
 }
-.primary-hero,
 .footer {
   background-color: var(--background-color-hero);
 }
@@ -79,13 +86,22 @@ ul {
   cursor: pointer;
 }
 .headline {
+  margin-top: 0;
+  margin-bottom: 50px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+.primary-hero {
+  text-align: center;
+  background-color: var(--background-color-hero);
+}
+
 .hero {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--hero-color);
   font-weight: 900;
   font-size: 44px;
@@ -107,6 +123,8 @@ ul {
   text-align: center;
 }
 .person-name {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--title-color);
   font-weight: 500;
   font-size: 16px;
@@ -114,6 +132,8 @@ ul {
   text-align: center;
 }
 .position {
+  margin-top: 0;
+  margin-bottom: 0;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.19;
@@ -161,12 +181,16 @@ ul {
   line-height: 1.63;
 }
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: var(--title-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 .text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
 }
