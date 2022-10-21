@@ -43,7 +43,19 @@ ul {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+
+
+  .site-nav .item {
+margin-right: 50px;
+  }
+ .site-nav .item:last-child {
+  margin-right: 0;
+} 
+
+
 .site-nav {
+  display: flex;
+  margin-left: 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
@@ -66,9 +78,23 @@ ul {
 .link {
   color: var(--title-color);
 }
+.site-nav-contact{
+  display: flex;
+  margin-left: auto;
+}
+
+.site-nav-contact .contact-nav+.contact-nav {
+  margin-left: 50px;
+}
 .contact {
+  /* display: block; */
   color: var(--text-color);
 }
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .footer {
   background-color: var(--background-color-hero);
 }
@@ -97,10 +123,15 @@ ul {
 .primary-hero {
   text-align: center;
   background-color: var(--background-color-hero);
+  margin-bottom: 94px;
 }
-
+.main-advantage{
+  margin-bottom: 118px;
+}
+.main-headline {
+  margin-bottom: 188px;
+}
 .hero {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--hero-color);
   font-weight: 900;
@@ -112,6 +143,7 @@ ul {
 .hero-button,
 .hero-button:hover,
 .hero-button:focus {
+  margin-top: 30px;
   font-family: Roboto, sans-serif;
   cursor: pointer;
   color: var(--hero-color);
@@ -122,6 +154,43 @@ ul {
   letter-spacing: 0.06em;
   text-align: center;
 }
+.images-work {
+  display: flex;
+  justify-content: center;
+
+}
+.images-work-item {
+  margin-right: 30px;
+}
+
+.images-work-item:nth-child(3n){ 
+  margin-right: 0;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+}
+.team-person {
+  margin-right: 30px;
+  margin-bottom: 94px;
+}
+.team-person:nth-child(4n){ 
+  margin-right: 0;
+}
+
+.advantage {
+  display: flex;
+  justify-content: center;
+}
+.advantage-item {
+  margin-right: 30px;
+}
+.advantage-item:nth-child(4n){ 
+  margin-right: 0;
+}
+
+
 .person-name {
   margin-top: 0;
   margin-bottom: 0;
@@ -173,6 +242,7 @@ ul {
   line-height: 1.71;
 }
 .button-portfolio {
+  margin-bottom: 50px;
   font-family: Roboto, sans-serif;
   color: var(--title-color);
   background-color: var(--bg-color);
@@ -209,4 +279,21 @@ ul {
 .team {
   background-color: var(--bg-color);
 }
-
+.bt-portfolio {
+  display: flex;
+  justify-content: center;
+}
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-work {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.item-work:nth-child(3n) {
+  margin-right: 0;
+}
+.item-work:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
