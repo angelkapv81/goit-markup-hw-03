@@ -240,20 +240,24 @@ border: #188CE8;
   color: var(--accent-color);
 }
 .contactfooter {
+  display: inline-block;
   color: #ffffff60;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 9px;
+  margin-bottom: 9px;
+  border: 0;
 }
 .addressfooter {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   margin: 0;
-  margin-top: 20px;
-  /* margin-bottom: 9px; */
+  margin-bottom: 9px;
+  display: inline-block;
+  border: 0;
 }
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
 .button-portfolio {
@@ -322,6 +326,7 @@ border: #188CE8;
   margin-bottom: 0;
 }
 .footer {
+  
   margin-left: auto;
   margin-right: auto;
   max-width: 1600px;
@@ -337,15 +342,17 @@ border: #188CE8;
   padding-bottom: 60px;
 }
 .contactfooter-tel {
+  display: inline-block;
   color: #ffffff60;
   font-size: 14px;
   line-height: 1.71;
-  margin-top: 9px;
+/* padding-topm: 9px; */
+border: 0;
 }
 .contactfooter:hover,
 .contactfooter:focus,
 .contactfooter-tel:hover,
-contactfooter-tel:focus {
+.contactfooter-tel:focus {
   cursor: pointer;
   color: #ffffff; 
 }
